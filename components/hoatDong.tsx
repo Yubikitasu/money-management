@@ -43,7 +43,7 @@ export default function HoatDong() {
 
     const data = useQuery(api.queries.getHoatDong, {});
     return (
-        <div className="max-w-700">
+        <div className="w-screen lg:w-200">
             <Separator className="my-4"></Separator>
             <div className="font-bold text-center">Hoạt động gần đây của bạn: </div>
             { data?.map(({_id, _creationTime, soTien, trangThai}) => 

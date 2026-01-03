@@ -17,14 +17,18 @@ export default function ShowSoTien() {
     return (
         <div>
             <Separator className="my-4"></Separator>
-            <div>
-                Bạn đã tích lũy được:
-                <div className="text-2xl font-bold text-center my-5">
+            <div className="space-y-4">
+                <div className="w-full p-4 border border-auto rounded-lg">
+                    Số tiền mà bạn đã tích lũy được:
+                    <div className="text-2xl font-bold">
                         {soTienChuyenDoi(tichLuy)}
+                    </div>
                 </div>
-                Bạn đã tiết kiệm được:
-                <div className="text-2xl font-bold text-center my-5">
+                <div className="w-full p-4 border border-auto rounded-lg">
+                    Số tiền mà bạn đã tiết kiệm được:
+                    <div className="text-2xl font-bold">
                         {soTienChuyenDoi(tietKiem)}
+                    </div>
                 </div>
             </div>
         </div>
